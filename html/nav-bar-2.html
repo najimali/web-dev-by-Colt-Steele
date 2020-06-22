@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar Styling</title>
+    <!-- Icon are from font awesome website -->
+    <script src="https://kit.fontawesome.com/20cfcf78fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/nav-bar-style-2.css">
+
+</head>
+
+<body>
+    <!--Source -  https://medium.com/swlh/how-to-create-a-basic-responsive-navigation-bar-beb8692953e3 -->
+    <!-- wrrapping in a container  -->
+    <div class="container">
+        <nav>
+            <!-- creating the menu button -->
+            <span class="nav-toggle" id="js-nav-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <!-- creating the logo button  -->
+            <div class="logo">
+                <span class="icon circle-1"></span>
+                <span class="icon circle-2"></span>
+                <span class="icon circle-3"></span>
+            </div>
+            <!-- Adding item in nav bar -->
+            <!-- Anchor tag are used to navigate user from to respective page -->
+            <ul id="js-menu">
+               <li>Home</li>
+               <li>Services</li>
+               <li>About</li> 
+               <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Adding the js  file -->
+    <script src="/js/nav-bar-2.js"></script>
+</body>
+
+</html>
