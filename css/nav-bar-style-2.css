@@ -92,7 +92,7 @@ ul li:hover {
 
 /* responsive */
 
- @media screen and (min-width:800px) {
+]]]]  @media screen and (min-width:800px) {
     nav {
         height: 100px;
         flex-direction: row;
