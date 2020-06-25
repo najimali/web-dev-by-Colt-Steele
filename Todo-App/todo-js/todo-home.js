@@ -1,7 +1,7 @@
 let input = prompt('What you like to do ??').trim();
 let todoItems = [];
 while(input!=='quit'){
-
+//    This will add new items in the list 
     if(input === 'new'){
         let newTodo = prompt('Add the items');
         todoItems.push(newTodo);
