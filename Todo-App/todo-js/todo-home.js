@@ -7,6 +7,7 @@ while(input!=='quit'){
         todoItems.push(newTodo);
         console.log(`${newTodo} is added to the list`);
     }
+    // Show the list items in index form 
     else if(input==='list'){
         for(let i = 0;i<todoItems.length;i++)
         console.log(`${i}: ${todoItems[i]}`);
