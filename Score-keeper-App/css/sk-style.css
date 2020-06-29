@@ -2,25 +2,30 @@ button {
     background: white;
     border: 1px solid rgb(192, 187, 188);
     border-radius: 10%;
-    font-weight: 600;
+    font-weight: 500;
     width: 90px;
+    outline: none;
 }
 
-.container-score {
-    display: flex;
-}
-
-.flex-item {
-    padding: 3px;
-}
 
 #max-player {
+    outline: none;
     background: white;
     border: 1px solid rgb(192, 187, 188);
     border-radius: 10%;
     width: 15%;
 }
 
-.change-player-button {
-    background: purple;
+#max-player:hover {
+    outline: none;
+    border: 1.4px solid rgb(138, 218, 211);
 }
+
+.button-purple {
+    background: rgb(76, 64, 129);
+}
+.button-light-blue
+ {
+     border:1.5px solid rgb(126, 207, 245); /* here configure as your needs */
+     /* color:#00c; */
+  }
