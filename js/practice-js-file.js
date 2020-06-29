@@ -1,4 +1,8 @@
-let numbers =[1,2,3,4,5,6,7,8,9,10];
-numbers.forEach(color=>{
-    if(color%3===0)console.log(color);
-})
+let button = document.querySelector('button');
+let body = document.querySelector('body');
+let isPurple = false;
+
+button.addEventListener('click', function () {
+    body.classList.toggle('purple');
+}
+);

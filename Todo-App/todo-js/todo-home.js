@@ -12,7 +12,6 @@ while (input !== 'quit') {
     //Delete the specific item from the list
     else if (input === 'delete') {
         deleteTodo();
-
     }
     input = prompt('What you like to do ??').trim();
 }
