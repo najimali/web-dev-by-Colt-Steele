@@ -17,3 +17,13 @@ p1_btn.addEventListener('click',function(){
     }
     if(p1_score==max_score){show_score1.style.color='green';}
 });
+let p2_btn = document.querySelector('#p2-btn');
+// console.log(p2_btn );
+//player two
+p2_btn.addEventListener('click',function(){
+    if(p1_score<max_score &&p2_score<max_score){
+        p2_score++;
+    show_score2.innerHTML=`${p2_score}`;
+    }
+    if(p2_score==max_score){show_score2.style.color='green';}
+});
