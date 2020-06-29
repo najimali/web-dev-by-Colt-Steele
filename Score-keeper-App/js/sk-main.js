@@ -11,9 +11,9 @@ let winnerScoreDisplay = document.querySelector('#winnner-score');
 let max_score = 5;
 //setting max player limit 
 let input = document.querySelector("#max-player");
-input.addEventListener('change',function(){
-    winnerScoreDisplay.innerHTML=input.value;
-    max_score =input.value;
+input.addEventListener('change', function () {
+    winnerScoreDisplay.innerHTML = input.value;
+    max_score = input.value;
     reset();
 });
 
@@ -21,23 +21,23 @@ input.addEventListener('change',function(){
 
 p1_btn.addEventListener('click', function () {
     p1_btn.classList.toggle('button-purple');
-    setTimeout(function(){
+    setTimeout(function () {
         p1_btn.classList.toggle('button-purple');
     }, 80);
-    
+
     if (p1_score < max_score && p2_score < max_score) {
         p1_score++;
         show_score1.innerHTML = `${p1_score}`;
     }
     if (p1_score == max_score) { show_score1.style.color = 'green'; }
-    // p1_btn.classList.toggle('button-purple');
+    
 });
 let p2_btn = document.querySelector('#p2-btn');
 // console.log(p2_btn );
 //player two
 p2_btn.addEventListener('click', function () {
     p2_btn.classList.toggle('button-purple');
-    setTimeout(function(){
+    setTimeout(function () {
         p2_btn.classList.toggle('button-purple');
     }, 80);
     if (p1_score < max_score && p2_score < max_score) {
@@ -53,7 +53,7 @@ resetbtn.addEventListener('click', function () {
 });
 
 
-function reset(){
+function reset() {
     p1_score = 0;
     p2_score = 0;
     show_score1.innerHTML = `${p1_score}`;
@@ -61,7 +61,7 @@ function reset(){
     show_score1.style.color = 'black'
     show_score2.style.color = 'black'
     resetbtn.classList.toggle('button-light-blue');
-    setTimeout(function(){
+    setTimeout(function () {
         resetbtn.classList.toggle('button-light-blue');
     }, 100);
 }

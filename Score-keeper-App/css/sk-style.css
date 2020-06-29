@@ -7,7 +7,6 @@ button {
     outline: none;
 }
 
-
 #max-player {
     outline: none;
     background: white;
@@ -24,8 +23,9 @@ button {
 .button-purple {
     background: rgb(76, 64, 129);
 }
-.button-light-blue
- {
-     border:1.5px solid rgb(126, 207, 245); /* here configure as your needs */
-     /* color:#00c; */
-  }
+
+.button-light-blue {
+    border: 1.5px solid rgb(126, 207, 245);
+    /* here configure as your needs */
+    /* color:#00c; */
+}
