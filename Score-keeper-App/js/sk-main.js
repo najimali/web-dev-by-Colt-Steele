@@ -27,3 +27,12 @@ p2_btn.addEventListener('click',function(){
     }
     if(p2_score==max_score){show_score2.style.color='green';}
 });
+//reset added
+let reset = document.querySelector('#reset-btn');
+reset.addEventListener('click',function(){
+p1_score=0;
+p2_score=0;
+show_score1.innerHTML=`${p1_score}`;
+show_score2.innerHTML=`${p2_score}`;
+
+});
