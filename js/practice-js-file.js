@@ -1,8 +1,13 @@
-let button = document.querySelector('button');
-let body = document.querySelector('body');
-let isPurple = false;
+let lis = document.querySelectorAll('li');
+for(let li of lis){
 
-button.addEventListener('click', function () {
-    body.classList.toggle('purple');
+    li.addEventListener('mouseover',function(){
+        this.classList.add('selected');
+    });
+    li.addEventListener('mouseout',function(){
+        this.classList.remove('selected');
+    });
+    li.addEventListener('click',function(){
+        this.classList.toggle('done');
+    });
 }
-);
