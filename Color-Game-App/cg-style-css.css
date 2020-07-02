@@ -1,11 +1,10 @@
 body {
     text-transform: uppercase;
     margin: 0;
-    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* border: 10px solid rebeccapurple; */
-    width: 100vw;
-    min-height: 100vh;
+    background: rgb(36, 35, 35);
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .container-1 {
@@ -15,16 +14,14 @@ body {
     text-align: center;
 }
 
-p {
-    margin: 0;
-}
-
 .text-top {
-    padding-top: 16px;
+    margin: 0;
+    padding-top: 20px;
     padding-bottom: 5px;
 }
 
 .text-bottom {
+    margin: 0;
     padding-top: 5px;
     padding-bottom: 16px;
 }
@@ -32,50 +29,45 @@ p {
 #rgb-code {
     margin: 0;
     font-size: 35px;
-    ;
 }
 
-.nav-bar ul {
+.container-2 {
     background: white;
-    border: .5px solid lightblue;
-    display: flex;
+    color: rgb(55, 103, 194);
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .15em;
+}
+
+.container-2 ul {
     margin: 0;
-    padding: 5px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 
-.nav-bar ul li {
-    color: rgb(55, 103, 194);
-    font-size: 12px;
-    font-weight: 600;
+.container-2 li {
+    margin: 0 10px;
+    padding: 5px 10px;
+  
 }
 
-#new-color {
-    width: 40%;
-    text-align: end;
+.container-2 li:hover {
+    background: rgb(16, 54, 90);
+    color: white;
 }
 
-#easy-game {
-    width: 30%;
-    text-align: end;
-    padding: 0 5px;
-}
 
-#hard-color {
-    width: 40%;
-}
 
 .container-3 {
-    background: rgb(36, 35, 35);
-    padding-bottom: 115%;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .box {
-    width: 8%;
-    min-width: 100px;
-    height: 100px;
-    min-width: 100px;
+    width: 10%;
+    height: 10%;
+    min-height: 150px;
     border-radius: 15%;
     background: white;
     margin: 10px;
@@ -91,5 +83,21 @@ p {
     display: flex;
     justify-content: center;
     margin: 0px 20px;
-    padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* styles for browsers larger than 960px; */
+    .box {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+    /* styles for browsers larger than 960px; */
+    .box {
+        width: 12%;
+        height: 12%;
+        min-height: 150px;
+    }
 }
