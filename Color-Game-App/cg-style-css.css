@@ -5,9 +5,11 @@ body {
     background: rgb(36, 35, 35);
     font-size: 16px;
     text-decoration: none;
+   
 }
 
 .container-1 {
+    letter-spacing: .1em;
     font-size: 20px;
     color: white;
     background: rgb(38, 132, 219);
