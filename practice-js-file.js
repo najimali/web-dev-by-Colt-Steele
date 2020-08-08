@@ -1,13 +1,6 @@
-let lis = document.querySelectorAll('li');
-for(let li of lis){
-
-    li.addEventListener('mouseover',function(){
-        this.classList.add('selected');
-    });
-    li.addEventListener('mouseout',function(){
-        this.classList.remove('selected');
-    });
-    li.addEventListener('click',function(){
-        this.classList.toggle('done');
-    });
-}
+$('div').css('background','purple')
+$('div.highlight').css('width','200px')
+$('#third').css({
+    border:'2px solid orange'
+})
+$('div').eq(1).css('color','white')
