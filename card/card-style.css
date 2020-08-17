@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f14c54;
+}
+.main-container {
+    background-color: #f14c54;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:10% auto;
+   
+}
+
+.container {
+    position: relative;
+    /* This flex is aligning the content of each card  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+    flex:20%;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 120px;
+    background: #f6cda7;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.container .card:hover {
+    height: 420px;
+}
+
+.container .card .imageBox {
+    position: relative;
+    width: 250px;
+    height: 160px;
+    top: -60px;
+    left:10px;
+    /* To give the 3-d effect  */
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imageBox img {
+
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+h2 {
+    color: #141010;
+}
+/* When Screen width is less than 800px then increase the container size to 50% */
+@media (max-width:800px){
+        .container{
+            flex:50%
+        }
+
+}
+/* When Screen width is less than 600px then increase the container size to 100% */
+
+@media (max-width:600px){
+    .container{
+        flex:100%
+    }
+
+}
